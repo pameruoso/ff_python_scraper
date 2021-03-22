@@ -16,7 +16,7 @@ I than decided to build a python script that uses the Selenium library and EdgeC
 `pip install selenium`
 - Install msedge_selenium_tools:
 `pip install msedge.selenium_tools`
-- Download and put in a folder the MsEdgeDriver executable. You can download it from here (https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/)
+- Download and put in the same script folder the MsEdgeDriver executable. You can download it from here (https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/)
 
 ### Usage
 python check_flashfiber.py
