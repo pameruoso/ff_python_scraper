@@ -5,7 +5,7 @@ I'm waiting for FlashFiber (https://flashfiber.it) to cover my house with FTTH c
 
 I than decided to build a python script that uses the Selenium library and EdgeChromium (my fav browser) to check the website.
 
-It may be useful to customize it directly with your own data and run it on a serverless platform to send daily automatic notifications on Telegram.
+It may be useful to customize it directly with your own data (City, Street) and run it on a serverless platform to send daily automatic notifications on your Telegram number.
 
 --------------------------------------------------------
 As result of the cooperation between Tim, Fastweb and KKR the Flashfiber website is going to be decommissioned. I added the script to check the connection availability for the new website: https://fibercop.it
@@ -30,3 +30,4 @@ python check_fibercop.py
 
 ### Things to be implemented
 Check if input data is valid, like Street and City.
+Add validation for city/street not found/exists.
