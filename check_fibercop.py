@@ -19,21 +19,20 @@ indirizzo = input().upper()
 print("Inserisci il numero civico")
 civico = input().upper()
 
-print("Controllo disponibilita Fibra Fibercop su " + indirizzo)
+print("Controllo disponibilita Fibra Fibercop su " + indirizzo + ", " + civico + " - " + citta)
 driver.get('https://www.fibercop.it')
 
-ff_citta = driver.find_element_by_id('ff-citta')
-time.sleep(3)
+ff_citta = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, 'ff-citta')))
 ff_citta.send_keys(citta)
 citta_xpath = '//li[text()='+'\"'+ citta + '\"'+']'
 drop = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, citta_xpath))).click()
 
-ff_indirizzo = driver.find_element_by_id('ff-indirizzo')
+ff_indirizzo = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, 'ff-indirizzo')))
 ff_indirizzo.send_keys(indirizzo)
 ind_xpath = '//li[text()='+'\"'+ indirizzo + '\"'+']'
 drop = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, ind_xpath))).click()
 
-ff_civico = driver.find_element_by_id('ff-civico')
+ff_civico = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, 'ff-civico')))
 ff_civico.send_keys(civico)
 civ_xpath = '//li[text()='+'\"'+ civico + '\"'+']'
 drop = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, civ_xpath))).click()
