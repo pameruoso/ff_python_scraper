@@ -7,6 +7,9 @@ I than decided to build a python script that uses the Selenium library and EdgeC
 
 It may be useful to customize it directly with your own data and run it on a serverless platform to send daily automatic notifications on Telegram.
 
+--------------------------------------------------------
+As result of the cooperation between Tim, Fastweb and KKR the Flashfiber website is going to be decommissioned. I added the script to check the connection availability for the new website: https://fibercop.it
+
 ## Requirements:
 - Python 3.X
 - Selenium library installed
@@ -21,7 +24,9 @@ It may be useful to customize it directly with your own data and run it on a ser
 - Download and put in the same script folder the MsEdgeDriver executable. You can download it from here (https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/)
 
 ### Usage
-python check_flashfiber.py
+python check_flashfiber.py (old)
+
+python check_fibercop.py
 
 ### Things to be implemented
 Check if input data is valid, like Street and City.
