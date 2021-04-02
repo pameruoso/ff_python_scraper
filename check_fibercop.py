@@ -22,6 +22,7 @@ civico = input().upper()
 print("Controllo disponibilita Fibra Fibercop su " + indirizzo + ", " + civico + " - " + citta)
 driver.get('https://www.fibercop.it')
 
+time.sleep(2)
 ff_citta = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, 'ff-citta')))
 ff_citta.send_keys(citta)
 citta_xpath = '//li[text()='+'\"'+ citta + '\"'+']'
@@ -41,7 +42,7 @@ drop = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, civ
 ff_submit = driver.find_element_by_id('ff-submit')
 ff_submit.submit()
 
-time.sleep(7)
+result = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.XPATH, '//h2[text()="Verifica un altro indirizzo"]')))
 result = driver.find_element_by_xpath('//meta[@property="og:title"]').get_attribute("content")
 print (result)
 driver.close()
