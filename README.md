@@ -30,4 +30,5 @@ python check_fibercop.py
 
 ### Things to be implemented
 Check if input data is valid, like Street and City.
+
 Add validation for city/street not found/exists.
