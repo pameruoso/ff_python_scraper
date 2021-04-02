@@ -1,4 +1,4 @@
-# FlashFiber python scraper
+# FlashFiber/Fibercop python scraper
 
 This is my first experiment with Selenium.
 I'm waiting for FlashFiber (https://flashfiber.it) to cover my house with FTTH connectivity but I find very annoying to go on the website and check the availability of the service manually.
