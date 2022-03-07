@@ -19,7 +19,7 @@ indirizzo = input().upper()
 print("Inserisci il numero civico")
 civico = input().upper()
 
-print("Controllo disponibilita Fibra Fibercop su " + indirizzo + ", " + civico + " - " + citta)
+print("Controllo disponibilità Fibra Fibercop su " + indirizzo + ", " + civico + " - " + citta)
 driver.get('https://www.fibercop.it')
 
 time.sleep(2)
