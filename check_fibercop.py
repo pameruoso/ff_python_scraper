@@ -13,11 +13,31 @@ edge_options.add_argument('log-level=3')
 driver = Edge(r"msedgedriver.exe", options = edge_options)
 
 print("Inserisci la città:")
-citta = input().upper()
+citta = ""
+while True:
+    citta = input().upper()
+    if citta == "":
+        print("La città è un campo obbligatorio")
+    else:
+        break
+
 print("Inserisci la via:")
-indirizzo = input().upper()
-print("Inserisci il numero civico")
-civico = input().upper()
+indirizzo = ""
+while True:
+    indirizzo = input().upper()
+    if indirizzo == "":
+        print("La via è un campo obbligatorio")
+    else:
+        break
+
+print("Inserisci il numero civico:")
+civico = ""
+while True:
+    civico = input().upper()
+    if civico == "":
+        print("Il numero civico è un campo obbligatorio")
+    else:
+        break
 
 print("Controllo disponibilità Fibra Fibercop su " + indirizzo + ", " + civico + " - " + citta)
 driver.get('https://www.fibercop.it')
